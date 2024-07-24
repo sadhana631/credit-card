@@ -19,7 +19,7 @@ import {
 
 const CreditCard = () => {
   const [cardNumber, setCardNumber] = useState('')
-  const [CardholderName, setCardHolderName] = useState('')
+  const [cardholderName, setCardHolderName] = useState('')
   const CardholderNameInUppercase = CardholderName.toUpperCase()
 
   const onChangeholderName = event => {
