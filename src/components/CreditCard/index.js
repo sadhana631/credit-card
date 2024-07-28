@@ -20,7 +20,7 @@ import {
 const CreditCard = () => {
   const [cardNumber, setCardNumber] = useState('')
   const [cardholderName, setCardHolderName] = useState('')
-  const CardholderNameInUppercase = CardholderName.toUpperCase()
+  const CardholderNameInUppercase = cardholderName.toUpperCase()
 
   const onChangeholderName = event => {
     setCardHolderName(event.target.value)
@@ -38,7 +38,7 @@ const CreditCard = () => {
           <HorizontalLine />
         </CreditCardHeadingContainer>
         <CardContainer>
-          <Card data-testid="CreditCard">
+          <Card data-testid="creditCard">
             <CardNumber>{cardNumber}</CardNumber>
             <CardholderNameText>CARDHOLDER NAME</CardholderNameText>
             <CardholderName>{CardholderNameInUppercase}</CardholderName>
